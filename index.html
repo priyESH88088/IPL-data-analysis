@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IPL Stats Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 1000px;
+    }
+    select {
+      font-size: 16px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    canvas {
+      max-width: 100%;
+      max-height: 500px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>IPL Stats Dashboard - Top 10 Players</h2>
+
+<label for="yearSelect">Select Year:</label>
+<select id="yearSelect">
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023" selected>2023</option>
+</select>
+
+<label for="statSelect">Select Stat:</label>
+<select id="statSelect">
+  <option value="orange-cap" selected>Most Runs (Orange Cap)</option>
+  <option value="most-4s">Most Fours</option>
+  <option value="most-6s">Most Sixes</option>
+  <option value="most-100s">Most Centuries</option>
+  <option value="most-50s">Most Fifties</option>
+</select>
+
+<canvas id="statsChart"></canvas>
+
+<script src="chart.js"></script>
+</body>
+</html>
+
+
+
+
+
+
